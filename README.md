@@ -14,6 +14,8 @@ PDF https://arxiv.org/pdf/1603.02754.pdf
 https://pypi.org/project/xgboost/
 
 ## Basic Code Blocks to Use XGBoost
-import pandas
-import matplotlib
+def foo():
+    if not bar:
+        return True
+
 
