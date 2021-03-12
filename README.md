@@ -14,8 +14,11 @@ PDF https://arxiv.org/pdf/1603.02754.pdf
 https://pypi.org/project/xgboost/
 
 ## Basic Code Blocks to Use XGBoost
-def foo():
-    if not bar:
-        return True
+
+```
+if (isAwesome){
+  return true
+}
+```
 
 
