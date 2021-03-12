@@ -10,7 +10,7 @@ There are many different machine learning algorithms that are used for regressio
 Tianqi Chen and Carlos Guestrin. XGBoost: A Scalable Tree Boosting System. In 22nd SIGKDD Conference on Knowledge Discovery and Data Mining, 2016
 PDF https://arxiv.org/pdf/1603.02754.pdf
 
-## pypi website for installing XGBoost in Anaconda / Python
+### pypi website for installing XGBoost in Anaconda / Python
 https://pypi.org/project/xgboost/
 
 
