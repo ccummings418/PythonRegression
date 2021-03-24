@@ -14,7 +14,7 @@ PDF https://arxiv.org/pdf/1603.02754.pdf
 https://pypi.org/project/xgboost/
 
 ## View a Sample Code
-Simply click on the XGBoost_ExampleCode.ipynb file above to view how to import, tune, and return results from the XGBoost package and a synthetic data set of various plant and reflectance parameters. 
+Simply click on the XGBoost_ExampleCode.ipynb file above to view how to import, tune, and return results from the XGBoost package using a synthetic data set of various plant and reflectance parameters. 
 
 ## Try XGBoost For Yourself
 Download the repository and import the module into JupyterLabs to follow the XGBoost_ExampleCode.ipynb file using the synthetic data in the SampleData_XGBoost.csv file. 
