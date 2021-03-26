@@ -48,6 +48,15 @@ Data
 
 ```
 
+|SAMPLE#| 	PLANT_DENSITY| 	FERTILIZER| 	SEED_HYBRID| 	HYB1| 	HYB2|
+--- | --- | --- | --- |--- |--- |
+|1| 	35| 	100| 	HYB1| 	 	1| 	0|
+|2| 	35| 	200| 	HYB2| 	 	0| 	1|
+|3| 	34| 	200|	HYB1| 	 	1| 	0|
+|4| 	34| 	100| 	HYB1| 		1| 	0|
+|5| 	32| 	25| 	HYB2| 	 	0| 	1|
+
+
 
 |SAMPLE#| 	PLANT_DENSITY| 	FERTILIZER| 	SEED_HYBRID| 	NDVI| 	BIOMASS| 	PNU| 	YIELD| 	HYB1| 	HYB2|
 --- | --- | --- | --- |--- |--- |--- |--- |--- |--- |
