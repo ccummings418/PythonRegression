@@ -30,7 +30,7 @@ or
 ## View a Sample Code
 Click on the XGBoost_ExampleCode.ipynb file above to view script to import CSV data, tune, and return model results from the XGBoost package using a fictional data set composed of various plant and reflectance parameters. 
 
-### Tips to Help Ensure Model Works Well
+### Helpful Tips to Ensure Model Works Well
 
 #### Tip 1 - Make Sure To Remove NaN or Blank Values (or Use Interpolation to Estimate Value)
 ```
@@ -55,6 +55,21 @@ Data
 |3| 	34| 	200|	HYB1| 	 	1| 	0|
 |4| 	34| 	100| 	HYB1| 		1| 	0|
 |5| 	32| 	25| 	HYB2| 	 	0| 	1|
+
+#### Tip 3 - XGBoost Uses DMatrix to Cluster Testing and Training Data Which Improves Performance
+
+```
+DMatrix_train = xgb.DMatrix(X_train,y_train)
+DMatrix_test = xgb.DMatrix(X_test, y_test)
+```
+#### Tip 4 - Utilize Hyperparameter Tuning and XGBoost Cross Validation Package (xgb.cv) To Best Configure Models
+
+```
+results = xgb.cv(dtrain = DMatrix_train, params = params, nfold=3,num_boost_round=10000, early_stopping_rounds=3, metrics="mae",seed=123)
+```
+
+#### Tip 5 - Plot the Predicted versus Measured Data to Visualize How Model is Performing
+![index](https://user-images.githubusercontent.com/80427122/112690783-bfb98100-8e52-11eb-95fd-fee72b18ab8b.png)
 
 ## Try XGBoost For Yourself
 Download the repository and import the module into JupyterLabs to follow the XGBoost_ExampleCode.ipynb file using the synthetic data in the SampleData_XGBoost.csv file. 
