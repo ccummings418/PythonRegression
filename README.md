@@ -40,6 +40,8 @@ Data
 
 ```
 #### Tip 2 - Utilize One-Hot Encoding for Any Categorical Variables 
+XGBoost and most other machine learning models have a difficult time using categorical variables, so there are several techniques for making the data easier to use. If the attribute shows a linear range of values (i.e. low, medium, high) it can be converted numerically into a single column wiht 1,2,and 3. However, if the column is categorical like crop type, hybrid variety, or soil type, it is likely better to use one-hot encoding which creates unique columns of 1's or 0's for each type of attribute, with 1 meaning TRUE and 0 meaning FALSE for being that attribute. 
+
 ```
 
 VarietiesOneHot = pd.get_dummies(Data.SEED_HYBRID)
