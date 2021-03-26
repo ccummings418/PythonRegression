@@ -58,13 +58,16 @@ Data
 |4| 	34| 	100| 	HYB1| 		1| 	0|
 |5| 	32| 	25| 	HYB2| 	 	0| 	1|
 
-#### Tip 3 - XGBoost Uses DMatrix to Cluster Testing and Training Data Which Improves Performance
-
+#### Tip 3 - XGBoost Uses DMatrix to Cluster Testing and Training Data 
+XGBoost has a unique format for dataframes which uses its own DMatrix format, which improves performance and makes it easier to fit the model.
 ```
 DMatrix_train = xgb.DMatrix(X_train,y_train)
 DMatrix_test = xgb.DMatrix(X_test, y_test)
 ```
 #### Tip 4 - Utilize Hyperparameter Tuning and XGBoost Cross Validation Package (xgb.cv) To Best Configure Models
+As mentioned before, XGBoost has a variety of different hyperparameters to tune which can optimize the resulting models for testing data. The specific parameters selected here are max_depth, min_child_weight, and learning rate (eta). 
+
+XGBoost also has a helpful cross-validation (cv) parameter which can be used within the training dataset to further improve finding the correct hyperparameters to use. In addition, it utilizes a early_stopping_rounds parameter to further alleviate the likelihood of overfitting a model based on training data. 
 
 ```
 results = xgb.cv(dtrain = DMatrix_train, params = params, nfold=3,num_boost_round=10000, early_stopping_rounds=3, metrics="mae",seed=123)
