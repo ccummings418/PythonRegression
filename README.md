@@ -1,4 +1,4 @@
-# Python Regression Using XGBoost
+# Python Regression Using XGBoost For Natural Resources Data
 
 *These are some useful coding modules I have used for XGBoost regression modeling.*
 
