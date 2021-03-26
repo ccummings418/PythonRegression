@@ -24,7 +24,7 @@ Using conda, either use
 
 or
 
--pip install xgboost
+- pip install xgboost
 
 
 ## View a Sample Code
