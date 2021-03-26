@@ -1,4 +1,4 @@
-# Python Regression Using Anaconda / JupyterLabs
+# Python Regression Using XGBoost
 
 *These are some useful coding modules I have used for XGBoost regression modeling.*
 
