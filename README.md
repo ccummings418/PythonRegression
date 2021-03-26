@@ -32,13 +32,26 @@ Click on the XGBoost_ExampleCode.ipynb file above to view script to import CSV d
 
 ### Tips to Help Ensure Model Works Well
 
-### Tip 1 - Make Sure To Remove NaN or Blank Values (or Use Interpolation to Estimate Value)
+#### Tip 1 - Make Sure To Remove NaN or Blank Values (or Use Interpolation to Estimate Value)
 ```
 RawData = pd.read_csv('SampleData_XGBoost.csv')
 Data = RawData.dropna()
 Data
 
 ```
+#### Tip 2 - Utilize One-Hot Encoding for Any Categorical Variables 
+```
+VarietiesOneHot = pd.get_dummies(Data.SEED_HYBRID)
+Data = pd.concat([Data, VarietiesOneHot], axis=1)
+Data
+```
+SAMPLE#| 	PLANT_DENSITY| 	FERTILIZER| 	SEED_HYBRID| 	NDVI| 	BIOMASS| 	PNU| 	YIELD| 	HYB1| 	HYB2|
+0| 	1| 	35| 	100| 	HYB1| 	0.868| 	6.09| 	74.1762| 	181.879349| 	1| 	0|
+1|	2| 	35| 	200| 	HYB2| 	0.910| 	6.28| 	78.8768| 	229.975907| 	0| 	1|
+2| 	3| 	34| 	200|	HYB1| 	0.924| 	7.92| 	125.4528| 	218.899751| 	1| 	0|
+3|	4| 	34| 	100| 	HYB1| 	0.840| 	5.64| 	63.6192|	168.532993| 	1| 	0|
+4|  5| 	32| 	25| 	HYB2| 	0.714| 	2.55| 	13.0050| 	88.622588| 	0| 	1|
+
 
 ## Try XGBoost For Yourself
 Download the repository and import the module into JupyterLabs to follow the XGBoost_ExampleCode.ipynb file using the synthetic data in the SampleData_XGBoost.csv file. 
