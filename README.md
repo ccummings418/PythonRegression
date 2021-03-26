@@ -78,4 +78,4 @@ results = xgb.cv(dtrain = DMatrix_train, params = params, nfold=3,num_boost_roun
 ![index](https://user-images.githubusercontent.com/80427122/112690783-bfb98100-8e52-11eb-95fd-fee72b18ab8b.png)
 
 ## Try XGBoost For Yourself
-Download the repository and import the module into JupyterLabs to follow the XGBoost_ExampleCode.ipynb file using the synthetic data in the SampleData_XGBoost.csv file. 
+Download the repository and import the module into JupyterLabs to follow the XGBoost_ExampleCode.ipynb file using the made-up data set in the SampleData_XGBoost.csv file. 
